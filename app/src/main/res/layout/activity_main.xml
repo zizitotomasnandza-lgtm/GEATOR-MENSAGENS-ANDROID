@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GEATOR Mensagens"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Estado: não configurado"/>
+
+        <EditText
+            android:id="@+id/edtUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="http://127.0.0.1:8788"
+            android:inputType="textUri"/>
+
+        <EditText
+            android:id="@+id/edtToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Token SMS"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar configuração"/>
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Testar ligação"/>
+
+        <Button
+            android:id="@+id/btnPermissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dar permissões SMS"/>
+
+        <Button
+            android:id="@+id/btnSyncInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ler mensagens do telefone"/>
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reenviar pendentes"/>
+
+        <Button
+            android:id="@+id/btnBattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remover restrição de bateria"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Histórico local"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Nenhuma mensagem processada."
+            android:textIsSelectable="true"/>
+
+    </LinearLayout>
+</ScrollView>

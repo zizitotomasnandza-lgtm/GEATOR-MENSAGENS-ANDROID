@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Geator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/geator_primary</item>
+        <item name="colorPrimaryVariant">@color/geator_primary_dark</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+</resources>
